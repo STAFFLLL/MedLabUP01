@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c405a9e6411648f2a173a730308427d0" Name="Diagram1">
+        <EntityTypeShape EntityType="MedLabModel.AccountForInsuranceCompany" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedLabModel.Analyzer" Width="1.5" PointX="13.5" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedLabModel.AnalyzerData" Width="1.5" PointX="15.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedLabModel.History" Width="1.5" PointX="8.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedLabModel.InsuranceCompany" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedLabModel.Order" Width="1.5" PointX="11.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedLabModel.OrderAndService" Width="1.5" PointX="13.5" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedLabModel.PolicyType" Width="1.5" PointX="3.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedLabModel.ReasonsForExit" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedLabModel.Service" Width="1.5" PointX="11.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedLabModel.StatusAccount" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedLabModel.StatusOrder" Width="1.5" PointX="9" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedLabModel.StatusServicesInOrder" Width="1.5" PointX="11.25" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedLabModel.sysdiagram" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedLabModel.User" Width="1.5" PointX="6" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedLabModel.UserType" Width="1.5" PointX="3.75" PointY="8.875" IsExpanded="true" />
+        <AssociationConnector Association="MedLabModel.FK_AccountForInsuranceCompanies__InsuranceCompany_" ManuallyRouted="false" />
+        <AssociationConnector Association="MedLabModel.FK_AccountForInsuranceCompanies__StatusAccount_" ManuallyRouted="false" />
+        <AssociationConnector Association="MedLabModel.FK_AccountForInsuranceCompanies__Users_" ManuallyRouted="false" />
+        <AssociationConnector Association="MedLabModel.FK_AnalyzerData_Analyzer_" ManuallyRouted="false" />
+        <AssociationConnector Association="MedLabModel.FK_AnalyzerData_OrderAndServices_" ManuallyRouted="false" />
+        <AssociationConnector Association="MedLabModel.FK_History__ReasonsForExit" ManuallyRouted="false" />
+        <AssociationConnector Association="MedLabModel.FK_History__Users_" ManuallyRouted="false" />
+        <AssociationConnector Association="MedLabModel.FK_Users__InsuranceCompany_" ManuallyRouted="false" />
+        <AssociationConnector Association="MedLabModel.FK_Order_StatusOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="MedLabModel.FK_Order_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedLabModel.FK_OrderAndServices__Order_" ManuallyRouted="false" />
+        <AssociationConnector Association="MedLabModel.FK_OrderAndServices__Services_" ManuallyRouted="false" />
+        <AssociationConnector Association="MedLabModel.FK_OrderAndServices__StatusServicesInOrder_" ManuallyRouted="false" />
+        <AssociationConnector Association="MedLabModel.FK_Users__PolicyTypes_" ManuallyRouted="false" />
+        <AssociationConnector Association="MedLabModel.FK_Users__UserType_" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

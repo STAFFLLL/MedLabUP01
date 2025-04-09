@@ -1,0 +1,30 @@
+﻿<Window x:Class="MedLab.Windows.LaboratoryAssistantWindows.ChangeOrderByAssistant"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedLab.Windows.LaboratoryAssistantWindows"
+        mc:Ignorable="d"
+        Title="Изменение заказа" Height="600" Width="450" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Rectangle/>
+        <ScrollViewer>
+            <StackPanel Orientation="Vertical" Margin="15">
+                <TextBlock Text="Изменнение заказа" Style="{StaticResource headerText}" HorizontalAlignment="Center" FontSize="32"/>
+                <DataGrid x:Name="ListNewServicesInOrder" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Название услуги" Binding="{Binding ServiceName}"/>
+                        <!-- Колонка с кнопкой -->
+                        <DataGridTemplateColumn Header="Действие">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button x:Name="AddNewServicesInOrder" Content="Добавить" Click="AddNewServicesInOrdersClick"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
